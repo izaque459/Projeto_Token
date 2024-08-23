@@ -7,7 +7,7 @@
 	
 ## Tecnologias utilizadas
 	-- Metamask, para gerenciar as contas de faucets
-	-- [IDE Remix](https://remix.ethereum.org/), para codificar o token
-	-- [ChainLink Faucenet Sepolia](https://faucets.chain.link/sepolia/),  para obter os faucets Sepolia
+	-- ![IDE Remix](https://remix.ethereum.org/), para codificar o token
+	-- ![ChainLink Faucenet Sepolia](https://faucets.chain.link/sepolia/),  para obter os faucets Sepolia
 
 ## Resultados
