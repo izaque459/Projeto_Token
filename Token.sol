@@ -29,7 +29,7 @@ contract DIOToken is ERC20Interface{
     constructor(uint256 quantia) {
         // Cunha 100 DIOToken a partir de uma unidade inserida
 		// Quantia é inserida pelo contrutor
-		_cunharToken(ENDERECO_CARTEIRA,quantia*100);
+		_cunharToken(ENDERECO_CARTEIRA,quantia*100**uint256(decimals));
     }
  
     function totalSupply() public override view returns (uint256) {
