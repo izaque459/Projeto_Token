@@ -11,3 +11,6 @@
 3. [ChainLink Faucenet Sepolia](https://faucets.chain.link/sepolia/),  para obter os faucets Sepolia
 
 ## Resultados
+1. A quantia de 100 unidades foi inserida pra gerar 10000 de DIO Tokens, veja [aqui]().
+2. O sucesso da transacao pode ser visto [aqui](), usando o Etherscan.
+3. A quantidade de tokens correta [aqui](), usando ainda o Etherscan.
