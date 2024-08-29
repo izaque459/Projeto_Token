@@ -21,14 +21,15 @@ contract DIOToken is ERC20Interface{
     string public symbol = "DIO" ;
     string public  name = "DIO Coin";
     uint8 public decimals = 2;
-    uint256 public _totalSupply = 1000000;
+    uint256 public _totalSupply;
  
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
  
-    constructor() {
-        
-        balances[msg.sender] = _totalSupply;
+    constructor(uint256 quantia) {
+        // Cunha 100 DIOToken a partir de uma unidade inserida
+		// Quantia é inserida pelo contrutor
+		_cunharToken(ENDERECO_CARTEIRA,quantia*100);
     }
  
     function totalSupply() public override view returns (uint256) {
@@ -68,4 +69,11 @@ contract DIOToken is ERC20Interface{
         emit Transfer(from, to, tokens);
         return true;
     }
+	
+	function _cunharToken(address endereco,uint256 tokens) internal{
+		balances[endereco] = balances[endereco] + tokens;
+		_totalSupply = _totalSupply + tokens;
+		emit Transfer(address(0),endereco,tokens);
+		
+	}
 } 
